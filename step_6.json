@@ -1,0 +1,86 @@
+{
+  "step_5": {
+    "prompt": "AI, be storyboard artist. Based on the following script in and its breakdown in {script}, and also information of characters, locations and objects mentioned in {profiles} please create a detailed storyboard for my YouTube Shorts horror video (0-60 seconds) in the form of a Narrative Slideshow. Since the video is a slideshow with narration, focus on visualizing key moments in static image or sequences of images, ensuring the flow of the story is clear, engaging, and impactful. Pay attention to {attention} and consider {consideration} in storyboard. the goal is {goal}",
+    "attention": "Pay attention that the visual part of the video are created from static images so Do NOT expect to the elements of image to move or change in the scene. Instead, if you need any specific movement or changes, you have two approaches: {approaches}",
+    "approaches": [
+      "split the scene into more than one scene to convey the message of the story",
+      "use divided view that shows two scenes separated by a line (which can be slanted or straight or etc.)"
+    ],
+    "consideration": [
+      {
+        "Scene-by-Scene Breakdown": "Visual representation of each scene, including key actions, character positions, and transitions between images. Ensure the slides build tension and tell the story coherently, with a clear beginning, middle, and end"
+      },
+      {
+        "Visual Elements": "For each scene, provide details on how the environment, characters, and symbolic elements should be depicted. Each image should effectively represent the narrative moment while maintaining visual cohesion across the video"
+      },
+      {
+        "Lighting & Color": "Suggestions for the lighting and color schemes for each slide to match the horror tone. Consider how lighting and color can be used creatively to enhance the mood of each image (e.g., shadows, dim lighting, desaturated colors)"
+      },
+      {
+        "Camera Angles & Transitions": "Even though it’s a slideshow, suggest visual compositions and the types of transitions (e.g., fade in/out, zoom, slide) between images to create a dynamic and visually engaging experience"
+      },
+      {
+        "Sound Design Cues": "Notations for key sound design elements (music, sound effects, ambient noises) that should accompany each image or scene transition to enhance the horror atmosphere and complement the visuals"
+      }
+    ],
+    "goal": "To make sure the storyboard is tailored for a Narrative Slideshow format, where the images work together with the narration to create an immersive, fast-paced, and unsettling horror experience",
+    "script": {
+      "scenes": [
+        {
+          "scene_number": 1,
+          "time": "0-3s",
+          "action": "Wide shot of a desolate road stretching under a dark, starless sky. The headlights of a lone car slice through the darkness. A low, ominous hum fills the air as the car speeds down the empty stretch of road. The camera focuses on the rearview mirror where, for a brief second, something *unnatural* reflects—a faint outline of a person in the back seat.",
+          "sound_design": {
+            "ambient": "Distant, echoing wind, faint static noise",
+            "music": "Low, droning hum, gradually increasing in intensity",
+            "special_effects": "A subtle metallic scraping sound from the back seat"
+          },
+          "narration": "It’s midnight. The road is empty, or so it seems..."
+        }
+      ]
+    },
+    "profiles": [
+      {
+        "characters": [
+          {
+            "Unique_ID": "Character_1",
+            "Name": "Unseen Figure",
+            "Role": "Mysterious presence haunting the driver",
+            "Appearance_Features": "Indistinct, shadowy outline, gender unknown",
+            "Clothing": "Appears in shadows, no distinct clothing visible"
+          },
+          {
+            "Unique_ID": "Character_2",
+            "Name": "The Driver",
+            "Role": "Protagonist, experiencing the haunting",
+            "Appearance_Features": "Male, mid-30s, Caucasian, short brown hair, stubble",
+            "Clothing": "Casual wear, denim jacket, and a t-shirt"
+          }
+        ],
+        "locations": [
+          {
+            "Unique_ID": "Location_1",
+            "General_Description": "Desolate road",
+            "Environmental_Features": "Long, straight stretch, lined with barren trees",
+            "Lighting": "Natural darkness, only illuminated by car headlights",
+            "General_Mood": "Isolated, eerie, unsettling"
+          }
+        ],
+        "objects": [
+          {
+            "Unique_ID": "Object_1",
+            "Name": "Rearview Mirror",
+            "Features": "Standard size, reflects an unnatural presence",
+            "Scene_Position": "Inside the car, crucial for revealing the mysterious figure"
+          },
+          {
+            "Unique_ID": "Object_2",
+            "Name": "Lone Car",
+            "Features": "Modern sedan, dark-colored, well-maintained",
+            "Scene_Position": "Central to all scenes, driven by the protagonist"
+          }
+        ]
+      }
+    ]
+  }
+}
