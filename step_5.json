@@ -1,6 +1,6 @@
 {
   "step_5": {
-    "prompt": "AI, be storyboard artist. Based on the following script in and its breakdown in {script}, and also information of characters, locations and objects mentioned in {profiles} please create a detailed storyboard for my YouTube Shorts horror video (0-60 seconds) in the form of a Narrative Slideshow. Since the video is a slideshow with narration, focus on visualizing key moments in static image or sequences of images, ensuring the flow of the story is clear, engaging, and impactful. Pay attention to {attention} and consider {consideration} in storyboard. the goal is {goal}",
+    "prompt": "AI, be storyboard artist. Based on this script, {script}, and its breakdown in {script_breakdown}, and also information of characters, locations and objects mentioned in {profiles} please create a detailed storyboard for my YouTube Shorts horror video (0-60 seconds) in the form of a Narrative Slideshow. Since the video is a slideshow with narration, focus on visualizing key moments in static image or sequences of images, ensuring the flow of the story is clear, engaging, and impactful. Pay attention to {attention} and consider {consideration} in storyboard. the goal is {goal}. Provide me the complete detailed storyboard in a well structured json file",
     "attention": "Pay attention that the visual part of the video are created from static images so Do NOT expect to the elements of image to move or change in the scene. Instead, if you need any specific movement or changes, you have two approaches: {approaches}",
     "approaches": [
       "split the scene into more than one scene to convey the message of the story",
@@ -23,64 +23,226 @@
         "Sound Design Cues": "Notations for key sound design elements (music, sound effects, ambient noises) that should accompany each image or scene transition to enhance the horror atmosphere and complement the visuals"
       }
     ],
-    "goal": "To make sure the storyboard is tailored for a Narrative Slideshow format, where the images work together with the narration to create an immersive, fast-paced, and unsettling horror experience",
+    "goal": "To make sure the storyboard is tailored for a Narrative Slideshow format, where the images work together with the narration to create an immersive, fast-paced, and unsettling horror experience.",
     "script": {
+      "title": "The Mirror’s Secret",
+      "duration": "0-60 seconds",
       "scenes": [
         {
-          "scene_number": 1,
-          "time": "0-3s",
-          "action": "Wide shot of a desolate road stretching under a dark, starless sky. The headlights of a lone car slice through the darkness. A low, ominous hum fills the air as the car speeds down the empty stretch of road. The camera focuses on the rearview mirror where, for a brief second, something *unnatural* reflects—a faint outline of a person in the back seat.",
-          "sound_design": {
-            "ambient": "Distant, echoing wind, faint static noise",
-            "music": "Low, droning hum, gradually increasing in intensity",
-            "special_effects": "A subtle metallic scraping sound from the back seat"
+          "timestamp": "0-5 seconds",
+          "visuals": "Close-up of protagonist brushing teeth in a well-lit bathroom.",
+          "audio": "Soft ambient bathroom sounds.",
+          "narration": "You've been here a thousand times... brushing, rinsing, unaware..."
+        },
+        {
+          "timestamp": "5-10 seconds",
+          "visuals": "The protagonist glances at the mirror, noticing a shadow in the background.",
+          "audio": "A faint, unsettling breath echoes.",
+          "narration": "But something's different tonight..."
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "visuals": "The camera focuses on the mirror. The shadow is clearer—a dark figure, unmoving.",
+          "audio": "A distorted crackling sound from the mirror.",
+          "narration": "A presence looms... yet the room behind remains empty."
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "visuals": "The protagonist turns slowly to check behind them—no one there.",
+          "audio": "Heartbeat intensifies, a subtle gasping grows stronger.",
+          "narration": "But when you turn, nothing but silence."
+        },
+        {
+          "timestamp": "30-45 seconds",
+          "visuals": "The figure in the mirror begins to move closer, inching towards the glass.",
+          "audio": "The mirror crackles louder, unbearable tension.",
+          "narration": "Something inside insists on an approach..."
+        },
+        {
+          "timestamp": "45-55 seconds",
+          "visuals": "Close-up of the protagonist reaching out to touch the glass.",
+          "audio": "Breath holds—silence broken by a sudden sharp crack.",
+          "narration": "You decide to challenge the unknown..."
+        },
+        {
+          "timestamp": "55-60 seconds",
+          "visuals": "As the protagonist’s fingers touch the mirror, their reflection grabs them, pulling them in.",
+          "audio": "A sudden rush of sound, muffled scream, and a final echoing thud.",
+          "narration": "But the mirror has secrets of its own... and they want you."
+        }
+      ],
+      "sound_design": {
+        "ambient": "Soft, eerie hum throughout.",
+        "key_effects": "Distorted mirror crackling, heartbeat, sharp crack as the twist unfolds.",
+        "narration": "Whispered, building tension in tandem with visuals."
+      }
+    },
+    "script_breakdown": {
+      "Visuals": [
+        {
+          "timestamp": "0-5 seconds",
+          "details": {
+            "camera": "Tight close-up on protagonist's face and teeth brushing, emphasizing normality.",
+            "lighting": "Bright, clinical lighting to reinforce the sense of normalcy.",
+            "color_scheme": "Cool tones to suggest a calm yet sterile environment.",
+            "transition": "Quick cut to capture routine."
+          }
+        },
+        {
+          "timestamp": "5-10 seconds",
+          "details": {
+            "camera": "Shift to medium shot focusing on the mirror; subtle pan reveals the shadow.",
+            "lighting": "Introduce subtle shadowing to suggest something amiss.",
+            "color_scheme": "Cool tones with a darker accent on the shadow.",
+            "transition": "Use a slow fade to imply unease."
+          }
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "details": {
+            "camera": "Close-up on the mirror, static and unsettling.",
+            "lighting": "Dimmer with focused light on the figure in the mirror.",
+            "color_scheme": "Increase contrast between light and shadow to heighten suspense.",
+            "transition": "Zoom in slowly to create tension."
+          }
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "details": {
+            "camera": "Over-the-shoulder shot as protagonist turns around, revealing emptiness.",
+            "lighting": "Maintain shadows, hint at isolation.",
+            "color_scheme": "Cool, with a slight warm hue on empty space to increase contrast.",
+            "transition": "Sudden cut to mirror to keep unsure suspense."
+          }
+        },
+        {
+          "timestamp": "30-45 seconds",
+          "details": {
+            "camera": "Slow zoom on the mirror as figure moves forward.",
+            "lighting": "Soft light grows harsher as figure approaches.",
+            "color_scheme": "Dark, as the figure advances, with deepening blacks.",
+            "transition": "Cross dissolve to maintain eerie tension."
+          }
+        },
+        {
+          "timestamp": "45-55 seconds",
+          "details": {
+            "camera": "Extreme close-up on protagonist's fingers near the glass.",
+            "lighting": "Highlight fingertips, shadowy edges.",
+            "color_scheme": "Neutral tones spotlight figures' interaction.",
+            "transition": "Sudden, jarring cut as connection happens."
+          }
+        },
+        {
+          "timestamp": "55-60 seconds",
+          "details": {
+            "camera": "Wide angle as mirror-transform intense.",
+            "lighting": "Flashes of light create chaos.",
+            "color_scheme": "Chaotic mix, blending cools and warms.",
+            "transition": "High-speed cut for climactic grab."
+          }
+        }
+      ],
+      "Sounds": [
+        {
+          "timestamp": "0-5 seconds",
+          "effects": "Quiet, mundane bathroom ambiance.",
+          "music": "None, starkness highlights routine."
+        },
+        {
+          "timestamp": "5-10 seconds",
+          "effects": "Soft, unsettling breath escalates.",
+          "music": "Low, dissonant tones subtly begin."
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "effects": "Distorted mirror crackling.",
+          "music": "Droning bass notes increase tension."
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "effects": "Heartbeat builds; gasping grows.",
+          "music": "Crescendo, layered with soft harmonic dissonance."
+        },
+        {
+          "timestamp": "30-45 seconds",
+          "effects": "Mirror crackles grow louder.",
+          "music": "High-pitched strings underline anxiety."
+        },
+        {
+          "timestamp": "45-55 seconds",
+          "effects": "Momentary silence; followed by sharp crack.",
+          "music": "Silence amps highlight the moment."
+        },
+        {
+          "timestamp": "55-60 seconds",
+          "effects": "Sudden rush, muffled scream, thud.",
+          "music": "Explosive crescendo, finality in chords."
+        }
+      ],
+      "Tone & Atmosphere": [
+        {
+          "timestamp": "0-10 seconds",
+          "mood": "Normality with hint of unease.",
+          "techniques": "Subtle visual symmetry, ambient sounds."
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "mood": "Increasing tension, lurking threat.",
+          "techniques": "Static camera, auditory distortions."
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "mood": "Isolation and dread.",
+          "techniques": "Juxtaposition of sight and audio; silence."
+        },
+        {
+          "timestamp": "30-60 seconds",
+          "mood": "Crescendo of fear, impending doom.",
+          "techniques": "Ramping sound effects, erratic visuals."
+        }
+      ],
+      "Narration": {
+        "Vocal_Characteristics": "Soft, whispered tone; steady build-up in speed.",
+        "Emotional_Layers": "Fear of the unknown; cognitive tension.",
+        "Narrative_Technique": "Second person narration engages viewers deeply.",
+        "Psychological_Impact": "Draws viewer into protagonist's paranoia and fear."
+      }
+    },
+    "profiles": {
+      "characters": [
+        {
+          "Unique_ID": "Character_1",
+          "Name": "Protagonist",
+          "Role": "Main character experiencing the mirror's secret",
+          "Appearance_Features": "Gender unspecified, mid-30s, fair skin, short brown hair, clean-shaven",
+          "Clothing": "Casual home attire, plain t-shirt, and pajama pants"
+        }
+      ],
+      "locations": [
+        {
+          "Unique_ID": "Location_1",
+          "General_Description": "Bathroom",
+          "Environmental_Features": {
+            "size": "Medium",
+            "architecture": "Modern",
+            "details of wall": "White tiles",
+            "details of floor": "Grey tiles",
+            "details of ceiling": "Flat, white",
+            "list of furniture with their location": "Sink with mirror above, shower to the left, toilet to the right"
           },
-          "narration": "It’s midnight. The road is empty, or so it seems..."
+          "Lighting": "Bright, clinical lighting",
+          "General_Mood": "Calm yet sterile, with an underlying sense of unease"
+        }
+      ],
+      "objects": [
+        {
+          "Unique_ID": "Object_1",
+          "Name": "Mirror",
+          "Features": "Glass, silver frame, medium size, pristine condition",
+          "Scene_Position": "Above the sink, central to the story's unfolding"
         }
       ]
-    },
-    "profiles": [
-      {
-        "characters": [
-          {
-            "Unique_ID": "Character_1",
-            "Name": "Unseen Figure",
-            "Role": "Mysterious presence haunting the driver",
-            "Appearance_Features": "Indistinct, shadowy outline, gender unknown",
-            "Clothing": "Appears in shadows, no distinct clothing visible"
-          },
-          {
-            "Unique_ID": "Character_2",
-            "Name": "The Driver",
-            "Role": "Protagonist, experiencing the haunting",
-            "Appearance_Features": "Male, mid-30s, Caucasian, short brown hair, stubble",
-            "Clothing": "Casual wear, denim jacket, and a t-shirt"
-          }
-        ],
-        "locations": [
-          {
-            "Unique_ID": "Location_1",
-            "General_Description": "Desolate road",
-            "Environmental_Features": "Long, straight stretch, lined with barren trees",
-            "Lighting": "Natural darkness, only illuminated by car headlights",
-            "General_Mood": "Isolated, eerie, unsettling"
-          }
-        ],
-        "objects": [
-          {
-            "Unique_ID": "Object_1",
-            "Name": "Rearview Mirror",
-            "Features": "Standard size, reflects an unnatural presence",
-            "Scene_Position": "Inside the car, crucial for revealing the mysterious figure"
-          },
-          {
-            "Unique_ID": "Object_2",
-            "Name": "Lone Car",
-            "Features": "Modern sedan, dark-colored, well-maintained",
-            "Scene_Position": "Central to all scenes, driven by the protagonist"
-          }
-        ]
-      }
-    ]
+    }
   }
 }

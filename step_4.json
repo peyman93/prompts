@@ -1,0 +1,635 @@
+{
+  "step_4": {
+    "prompt": "Please based on this script, {script}, and it's script breakdown, {script_breakdown}, Create a complete profile for each character including {character_includes}. Create a complete profile for each location including {location_includes}. Create a complete profile for each object including {object_includes}. Please provide these profiles with details in json format all in one single json object with structure like {output_structure} and put the \"script\" and \"script_breakdown\" properties to exactly what i have provided to you in respectively {script} and {script_breakdown}",
+    "output_structure": {
+      "script": {},
+      "script_breakdown": {},
+      "profiles": [
+        {
+          "characters": [],
+          "locations": [],
+          "objects": []
+        }
+      ]
+    },
+    "character_includes": [
+      {
+        "Unique_ID": "A unique identifier for the character (e.g., Character_1)"
+      },
+      {
+        "Name": "The character's name in the story"
+      },
+      {
+        "Role": "The character's role in the story"
+      },
+      {
+        "Appearance_Features": "Gender, age, skin color, hair color and style, facial details"
+      },
+      {
+        "Clothing": "A detailed description of the clothing and its specifics"
+      }
+    ],
+    "location_includes": [
+      {
+        "Unique_ID": "A unique identifier for the location (e.g., Location_1)"
+      },
+      {
+        "General_Description": "Type of location (e.g., room, forest, street)"
+      },
+      {
+        "Environmental_Features": "Environmental features based on {location_includes.General_Description} like these examples {Environmental_Features_examples}"
+      },
+      {
+        "Lighting": "Light sources, type of lighting (natural, artificial), intensity, and color of light"
+      },
+      {
+        "General_Mood": "Atmosphere and visual feeling of the location"
+      }
+    ],
+    "object_includes": [
+      {
+        "Unique_ID": "A unique identifier for the object (e.g., Object_1)"
+      },
+      {
+        "Name": "The name of the object (e.g., table, mirror)"
+      },
+      {
+        "Features": "Material, color, size, condition (new or old)"
+      },
+      {
+        "Scene_Position": "Where the object is located and its role in the story"
+      }
+    ],
+    "Environmental_Features_examples": {
+      "room": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "living_room": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "kitchen": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "bathroom": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "bedroom": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "office": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "library": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location",
+        "book collections",
+        "location",
+        "reading areas",
+        "study spaces"
+      ],
+      "hallway": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "garage": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "basement": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "attic": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "restaurant": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "museum": [
+        "size",
+        "architecture",
+        "details of wall",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "park": [
+        "size",
+        "architecture",
+        "details of trees",
+        "types of plants",
+        "location",
+        "activities available",
+        "furniture",
+        "sounds"
+      ],
+      "stadium": [
+        "size",
+        "architecture",
+        "details of walls",
+        "details of seating",
+        "details of floor",
+        "location",
+        "types of events",
+        "facilities"
+      ],
+      "shopping_mall": [
+        "size",
+        "architecture",
+        "details of walls",
+        "details of flooring",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "hospital": [
+        "size",
+        "architecture",
+        "details of walls",
+        "details of floor",
+        "details of ceiling",
+        "rooms and wards"
+      ],
+      "hotel": [
+        "size",
+        "architecture",
+        "details of walls",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "gym": [
+        "size",
+        "architecture",
+        "details of walls",
+        "details of floor",
+        "details of ceiling",
+        "list of equipment with their location"
+      ],
+      "classroom": [
+        "size",
+        "architecture",
+        "details of walls",
+        "details of floor",
+        "details of ceiling",
+        "list of furniture with their location"
+      ],
+      "theater": [
+        "size",
+        "architecture",
+        "details of stage",
+        "seating arrangement",
+        "location",
+        "sound system",
+        "lighting",
+        "stage setup"
+      ],
+      "forest": [
+        "color of trees",
+        "size of trees",
+        "kind of forest",
+        "animals",
+        "location",
+        "weather",
+        "terrain",
+        "sounds"
+      ],
+      "beach": [
+        "size",
+        "type of sand",
+        "water characteristics",
+        "location",
+        "activities",
+        "furniture",
+        "weather",
+        "sounds"
+      ],
+      "desert": [
+        "size",
+        "sand type",
+        "temperature",
+        "vegetation",
+        "animals",
+        "location",
+        "weather",
+        "terrain"
+      ],
+      "mountain": [
+        "size",
+        "types of rocks",
+        "vegetation",
+        "animals",
+        "location",
+        "weather",
+        "altitude",
+        "terrain"
+      ],
+      "city": [
+        "size",
+        "architecture",
+        "population density",
+        "public spaces",
+        "transportation",
+        "location",
+        "facilities"
+      ],
+      "subway": [
+        "size",
+        "architecture",
+        "passenger capacity",
+        "lighting",
+        "location",
+        "stations",
+        "accessibility"
+      ],
+      "airport": [
+        "size",
+        "architecture",
+        "passenger capacity",
+        "runways",
+        "location",
+        "facilities",
+        "security features"
+      ],
+      "train_station": [
+        "size",
+        "architecture",
+        "platforms",
+        "location",
+        "passenger amenities",
+        "ticketing areas"
+      ],
+      "university": [
+        "size",
+        "architecture",
+        "campus layout",
+        "facilities",
+        "location",
+        "types of buildings",
+        "classrooms"
+      ],
+      "zoo": [
+        "size",
+        "types of animals",
+        "enclosures",
+        "location",
+        "facilities",
+        "activities"
+      ],
+      "aquarium": [
+        "size",
+        "types of sea life",
+        "tank designs",
+        "location",
+        "visitor amenities",
+        "lighting"
+      ],
+      "cafe": [
+        "size",
+        "architecture",
+        "interior design",
+        "location",
+        "menu items",
+        "furniture arrangement"
+      ],
+      "pub": [
+        "size",
+        "architecture",
+        "interior design",
+        "location",
+        "seating arrangement",
+        "menu items",
+        "facilities"
+      ],
+      "nightclub": [
+        "size",
+        "architecture",
+        "lighting",
+        "sound system",
+        "dance floor",
+        "location",
+        "facilities"
+      ],
+      "gymnasium": [
+        "size",
+        "architecture",
+        "equipment",
+        "location",
+        "flooring",
+        "sound system"
+      ],
+      "skyscraper": [
+        "size",
+        "height",
+        "architecture",
+        "floors",
+        "location",
+        "facilities",
+        "view"
+      ],
+      "temple": [
+        "size",
+        "architecture",
+        "religious significance",
+        "location",
+        "decorations",
+        "facilities"
+      ],
+      "church": [
+        "size",
+        "architecture",
+        "religious artifacts",
+        "location",
+        "facilities",
+        "aesthetic features"
+      ],
+      "synagogue": [
+        "size",
+        "architecture",
+        "religious features",
+        "location",
+        "facilities",
+        "design elements"
+      ],
+      "mosque": [
+        "size",
+        "architecture",
+        "religious elements",
+        "location",
+        "facilities",
+        "decorative features"
+      ],
+      "observatory": [
+        "size",
+        "location",
+        "equipment",
+        "viewing areas",
+        "facilities",
+        "purpose"
+      ],
+      "planetarium": [
+        "size",
+        "location",
+        "projection system",
+        "seating",
+        "education purpose",
+        "viewing experience"
+      ],
+      "circus": [
+        "size",
+        "location",
+        "seating arrangement",
+        "equipment",
+        "performers",
+        "attractions"
+      ],
+      "playground": [
+        "size",
+        "type of equipment",
+        "location",
+        "facilities",
+        "activities available"
+      ]
+    },
+    "script": {
+      "title": "The Mirror’s Secret",
+      "duration": "0-60 seconds",
+      "scenes": [
+        {
+          "timestamp": "0-5 seconds",
+          "visuals": "Close-up of protagonist brushing teeth in a well-lit bathroom.",
+          "audio": "Soft ambient bathroom sounds.",
+          "narration": "You've been here a thousand times... brushing, rinsing, unaware..."
+        },
+        {
+          "timestamp": "5-10 seconds",
+          "visuals": "The protagonist glances at the mirror, noticing a shadow in the background.",
+          "audio": "A faint, unsettling breath echoes.",
+          "narration": "But something's different tonight..."
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "visuals": "The camera focuses on the mirror. The shadow is clearer—a dark figure, unmoving.",
+          "audio": "A distorted crackling sound from the mirror.",
+          "narration": "A presence looms... yet the room behind remains empty."
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "visuals": "The protagonist turns slowly to check behind them—no one there.",
+          "audio": "Heartbeat intensifies, a subtle gasping grows stronger.",
+          "narration": "But when you turn, nothing but silence."
+        },
+        {
+          "timestamp": "30-45 seconds",
+          "visuals": "The figure in the mirror begins to move closer, inching towards the glass.",
+          "audio": "The mirror crackles louder, unbearable tension.",
+          "narration": "Something inside insists on an approach..."
+        },
+        {
+          "timestamp": "45-55 seconds",
+          "visuals": "Close-up of the protagonist reaching out to touch the glass.",
+          "audio": "Breath holds—silence broken by a sudden sharp crack.",
+          "narration": "You decide to challenge the unknown..."
+        },
+        {
+          "timestamp": "55-60 seconds",
+          "visuals": "As the protagonist’s fingers touch the mirror, their reflection grabs them, pulling them in.",
+          "audio": "A sudden rush of sound, muffled scream, and a final echoing thud.",
+          "narration": "But the mirror has secrets of its own... and they want you."
+        }
+      ],
+      "sound_design": {
+        "ambient": "Soft, eerie hum throughout.",
+        "key_effects": "Distorted mirror crackling, heartbeat, sharp crack as the twist unfolds.",
+        "narration": "Whispered, building tension in tandem with visuals."
+      }
+    },
+    "script_breakdown": {
+      "Visuals": [
+        {
+          "timestamp": "0-5 seconds",
+          "details": {
+            "camera": "Tight close-up on protagonist's face and teeth brushing, emphasizing normality.",
+            "lighting": "Bright, clinical lighting to reinforce the sense of normalcy.",
+            "color_scheme": "Cool tones to suggest a calm yet sterile environment.",
+            "transition": "Quick cut to capture routine."
+          }
+        },
+        {
+          "timestamp": "5-10 seconds",
+          "details": {
+            "camera": "Shift to medium shot focusing on the mirror; subtle pan reveals the shadow.",
+            "lighting": "Introduce subtle shadowing to suggest something amiss.",
+            "color_scheme": "Cool tones with a darker accent on the shadow.",
+            "transition": "Use a slow fade to imply unease."
+          }
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "details": {
+            "camera": "Close-up on the mirror, static and unsettling.",
+            "lighting": "Dimmer with focused light on the figure in the mirror.",
+            "color_scheme": "Increase contrast between light and shadow to heighten suspense.",
+            "transition": "Zoom in slowly to create tension."
+          }
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "details": {
+            "camera": "Over-the-shoulder shot as protagonist turns around, revealing emptiness.",
+            "lighting": "Maintain shadows, hint at isolation.",
+            "color_scheme": "Cool, with a slight warm hue on empty space to increase contrast.",
+            "transition": "Sudden cut to mirror to keep unsure suspense."
+          }
+        },
+        {
+          "timestamp": "30-45 seconds",
+          "details": {
+            "camera": "Slow zoom on the mirror as figure moves forward.",
+            "lighting": "Soft light grows harsher as figure approaches.",
+            "color_scheme": "Dark, as the figure advances, with deepening blacks.",
+            "transition": "Cross dissolve to maintain eerie tension."
+          }
+        },
+        {
+          "timestamp": "45-55 seconds",
+          "details": {
+            "camera": "Extreme close-up on protagonist's fingers near the glass.",
+            "lighting": "Highlight fingertips, shadowy edges.",
+            "color_scheme": "Neutral tones spotlight figures' interaction.",
+            "transition": "Sudden, jarring cut as connection happens."
+          }
+        },
+        {
+          "timestamp": "55-60 seconds",
+          "details": {
+            "camera": "Wide angle as mirror-transform intense.",
+            "lighting": "Flashes of light create chaos.",
+            "color_scheme": "Chaotic mix, blending cools and warms.",
+            "transition": "High-speed cut for climactic grab."
+          }
+        }
+      ],
+      "Sounds": [
+        {
+          "timestamp": "0-5 seconds",
+          "effects": "Quiet, mundane bathroom ambiance.",
+          "music": "None, starkness highlights routine."
+        },
+        {
+          "timestamp": "5-10 seconds",
+          "effects": "Soft, unsettling breath escalates.",
+          "music": "Low, dissonant tones subtly begin."
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "effects": "Distorted mirror crackling.",
+          "music": "Droning bass notes increase tension."
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "effects": "Heartbeat builds; gasping grows.",
+          "music": "Crescendo, layered with soft harmonic dissonance."
+        },
+        {
+          "timestamp": "30-45 seconds",
+          "effects": "Mirror crackles grow louder.",
+          "music": "High-pitched strings underline anxiety."
+        },
+        {
+          "timestamp": "45-55 seconds",
+          "effects": "Momentary silence; followed by sharp crack.",
+          "music": "Silence amps highlight the moment."
+        },
+        {
+          "timestamp": "55-60 seconds",
+          "effects": "Sudden rush, muffled scream, thud.",
+          "music": "Explosive crescendo, finality in chords."
+        }
+      ],
+      "Tone & Atmosphere": [
+        {
+          "timestamp": "0-10 seconds",
+          "mood": "Normality with hint of unease.",
+          "techniques": "Subtle visual symmetry, ambient sounds."
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "mood": "Increasing tension, lurking threat.",
+          "techniques": "Static camera, auditory distortions."
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "mood": "Isolation and dread.",
+          "techniques": "Juxtaposition of sight and audio; silence."
+        },
+        {
+          "timestamp": "30-60 seconds",
+          "mood": "Crescendo of fear, impending doom.",
+          "techniques": "Ramping sound effects, erratic visuals."
+        }
+      ],
+      "Narration": {
+        "Vocal_Characteristics": "Soft, whispered tone; steady build-up in speed.",
+        "Emotional_Layers": "Fear of the unknown; cognitive tension.",
+        "Narrative_Technique": "Second person narration engages viewers deeply.",
+        "Psychological_Impact": "Draws viewer into protagonist's paranoia and fear."
+      }
+    }
+  }
+}

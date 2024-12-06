@@ -1,0 +1,14 @@
+{
+  "step_2": {
+    "prompt": "AI, be a scriptwriter. Based on the following brainstormed idea, please write a professional, engaging script for a YouTube Shorts video (0-60 seconds) which is a Narrated Slideshow video that will captivate and unsettle viewers immediately. The goal is to create a quick, impactful horror experience with a strong hook in the first few seconds that maintains tension and engagement throughout the short format. Incorporate visual tension, sound design, and unexpected twists to enhance the horror atmosphere. The script should be clear, concise, and designed for a broad audience, with effective pacing for a 0-60 second video. Please ensure the script is cinematic, suspenseful, and makes full use of horror conventions to create a powerful, memorable moment. Please provide fully detailed script in json form.",
+    "idea": {
+      "title": "The Mirror’s Secret",
+      "theme": "Psychological Horror / Supernatural",
+      "hook": "You see something in the mirror that isn’t reflected in the room.",
+      "description": "The protagonist is brushing their teeth when they notice something moving in the mirror behind them. It’s a dark figure standing still, but the room is empty. When they turn around, the room is empty, but the figure still lingers in the mirror, getting closer with each passing second.",
+      "visuals": "A well-lit bathroom, focusing on the protagonist’s reflection, sudden changes in the mirror’s reflection with an ominous figure appearing, slow zoom-in on the figure's face.",
+      "sound_design": "Faint breathing, a distorted mirror crackling sound as the figure moves, the sound of a heart racing.",
+      "twist": "The protagonist finally confronts the figure in the mirror, but as they touch the glass, their reflection grabs them instead, pulling them into the mirror."
+    }
+  }
+}

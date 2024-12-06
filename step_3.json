@@ -1,0 +1,82 @@
+{
+  "step_3": {
+    "prompt": "I have the following script for my YouTube Shorts horror video, which is a Narrated Slideshow video, and I need a detailed breakdown of how the visuals and sounds should be structured (\"Script Breakdown for Visuals & Sounds\"). Please analyze the script and suggest specific visual elements, camera angles, lighting, color schemes, and sound design (e.g., sound effects, music, and ambiance) that will enhance the horror and tension. Your breakdown should focus on how to maximize the impact of the story within 0-60 seconds, keeping in mind the need for quick pacing and an immediate hook in the first few seconds. Please include these {includes}. The goal is {goal}. Please provide well structured and detailed json object with this structure {output_json_structure} and put the \"script\" property to exactly what i have provided to you in {script}",
+    "output_json_structure": {
+      "script": {},
+      "script_breakdown": {}
+    },
+    "goal": "To make sure the video is visually and sonically compelling and keeps the audience on edge throughout.",
+    "includes": [
+      {
+        "Visuals": "Key visual moments (camera movements, scene transitions, lighting, etc.)"
+      },
+      {
+        "Sounds": "Sound effects, background ambiance, music cues, audio moments"
+      },
+      {
+        "Tone & Atmosphere": "Mood-enhancing techniques for horror experience"
+      },
+      {
+        "Narration": {
+          "Vocal_Characteristics": "Voice tone, pitch, speed",
+          "Emotional_Layers": "Underlying psychological tension",
+          "Narrative_Technique": "Storytelling approach",
+          "Psychological_Impact": "How narration manipulates viewer's emotions"
+        }
+      }
+    ],
+    "script": {
+      "title": "The Mirror’s Secret",
+      "duration": "0-60 seconds",
+      "scenes": [
+        {
+          "timestamp": "0-5 seconds",
+          "visuals": "Close-up of protagonist brushing teeth in a well-lit bathroom.",
+          "audio": "Soft ambient bathroom sounds.",
+          "narration": "You've been here a thousand times... brushing, rinsing, unaware..."
+        },
+        {
+          "timestamp": "5-10 seconds",
+          "visuals": "The protagonist glances at the mirror, noticing a shadow in the background.",
+          "audio": "A faint, unsettling breath echoes.",
+          "narration": "But something's different tonight..."
+        },
+        {
+          "timestamp": "10-20 seconds",
+          "visuals": "The camera focuses on the mirror. The shadow is clearer—a dark figure, unmoving.",
+          "audio": "A distorted crackling sound from the mirror.",
+          "narration": "A presence looms... yet the room behind remains empty."
+        },
+        {
+          "timestamp": "20-30 seconds",
+          "visuals": "The protagonist turns slowly to check behind them—no one there.",
+          "audio": "Heartbeat intensifies, a subtle gasping grows stronger.",
+          "narration": "But when you turn, nothing but silence."
+        },
+        {
+          "timestamp": "30-45 seconds",
+          "visuals": "The figure in the mirror begins to move closer, inching towards the glass.",
+          "audio": "The mirror crackles louder, unbearable tension.",
+          "narration": "Something inside insists on an approach..."
+        },
+        {
+          "timestamp": "45-55 seconds",
+          "visuals": "Close-up of the protagonist reaching out to touch the glass.",
+          "audio": "Breath holds—silence broken by a sudden sharp crack.",
+          "narration": "You decide to challenge the unknown..."
+        },
+        {
+          "timestamp": "55-60 seconds",
+          "visuals": "As the protagonist’s fingers touch the mirror, their reflection grabs them, pulling them in.",
+          "audio": "A sudden rush of sound, muffled scream, and a final echoing thud.",
+          "narration": "But the mirror has secrets of its own... and they want you."
+        }
+      ],
+      "sound_design": {
+        "ambient": "Soft, eerie hum throughout.",
+        "key_effects": "Distorted mirror crackling, heartbeat, sharp crack as the twist unfolds.",
+        "narration": "Whispered, building tension in tandem with visuals."
+      }
+    }
+  }
+}
